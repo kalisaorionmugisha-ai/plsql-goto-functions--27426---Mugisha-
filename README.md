@@ -765,15 +765,4 @@ C1 output: <img width="1483" height="1715" alt="c1" src="https://github.com/user
 
 ---
 
-## 7. Reflection (C2)
 
-
-
-*What I learned about GOTO
-GOTO jumps to a label in the program. I used it to classify numbers and to review salaries. I learned it can jump out of an IF block, but it cannot jump into one, because that gives the error PLS-00375. I fixed this by moving the label outside the IF.
-
-GOTO vs normal code
-When I rewrote the programs without GOTO, using IF/ELSIF and CONTINUE, they gave the same results and were easier to read. I think GOTO should be avoided in most cases. It is only useful for something like one shared error exit, as in my payroll validator.
-
-What I learned about functions
-A function always returns a value, and I can use it inside a SELECT query. I wrote functions for annual salary, years of service, tax and department name. I used exception handling so that bad input, like an employee that doesn’t exist, gives NULL, UNKNOWN or a clear error message instead of crashing.
